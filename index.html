@@ -385,7 +385,7 @@
     <!-- Main Application Section -->
     <div id="mainSection" style="display: none;">
         <nav class="navbar navbar-dark">
-            <div class="container">
+            <div class="container-fluid">
                 <span class="navbar-brand mb-0 h1">
                     <i class="fas fa-robot"></i> SmartSDLC
                 </span>
@@ -395,8 +395,8 @@
             </div>
         </nav>
 
-        <div class="container mt-4">
-            <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <div class="container-fluid mt-4">
+            <ul class="nav nav-tabs nav-justified" id="myTab" role="tablist">
                 <li class="nav-item">
                     <a class="nav-link active" id="requirements-tab" data-bs-toggle="tab" href="#requirements">
                         <i class="fas fa-file-alt"></i> Requirements
@@ -423,7 +423,7 @@
                 <!-- Requirements Analysis Tab -->
                 <div class="tab-pane fade show active" id="requirements">
                     <div class="row">
-                        <div class="col-md-8">
+                        <div class="col-12 col-md-8 mb-3 mb-md-0">
                             <h3><i class="fas fa-search"></i> Requirements Analysis</h3>
                             <p class="text-muted">Upload a PDF or enter text to analyze software requirements</p>
                             
@@ -439,12 +439,12 @@
                                     <textarea class="form-control" rows="6" name="text" placeholder="Enter your project requirements here..."></textarea>
                                 </div>
                                 
-                                <button type="submit" class="btn btn-primary">
+                                <button type="submit" class="btn btn-primary py-3 px-4">
                                     <i class="fas fa-analytics"></i> Analyze Requirements
                                 </button>
                             </form>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-12 col-md-4">
                             <div class="card">
                                 <div class="card-body">
                                     <h6 class="card-title"><i class="fas fa-info-circle"></i> What this does:</h6>
@@ -464,7 +464,7 @@
                 <!-- Code Generation Tab -->
                 <div class="tab-pane fade" id="code">
                     <div class="row">
-                        <div class="col-md-8">
+                        <div class="col-12 col-md-8 mb-3 mb-md-0">
                             <h3><i class="fas fa-code"></i> Code Generation</h3>
                             <p class="text-muted">Generate code from natural language descriptions</p>
                             
@@ -509,12 +509,12 @@
                                 </div>
                                 <input type="text" class="form-control mt-2 d-none" name="custom_language" id="codeCustomLanguage" placeholder="Enter custom language">
                                 
-                                <button type="submit" class="btn btn-primary">
+                                <button type="submit" class="btn btn-primary py-3 px-4">
                                     <i class="fas fa-magic"></i> Generate Code
                                 </button>
                             </form>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-12 col-md-4">
                             <div class="card">
                                 <div class="card-body">
                                     <h6 class="card-title"><i class="fas fa-lightbulb"></i> Code Generation Features:</h6>
@@ -534,7 +534,7 @@
                 <!-- Test Generation Tab -->
                 <div class="tab-pane fade" id="tests">
                     <div class="row">
-                        <div class="col-md-8">
+                        <div class="col-12 col-md-8 mb-3 mb-md-0">
                             <h3><i class="fas fa-vial"></i> Test Generation</h3>
                             <p class="text-muted">Generate comprehensive test cases for your code</p>
                             
@@ -583,12 +583,12 @@
                                 </div>
                                 <input type="text" class="form-control mt-2 d-none" name="custom_language" id="testCustomLanguage" placeholder="Enter custom language">
                                 
-                                <button type="submit" class="btn btn-primary">
+                                <button type="submit" class="btn btn-primary py-3 px-4">
                                     <i class="fas fa-flask"></i> Generate Tests
                                 </button>
                             </form>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-12 col-md-4">
                             <div class="card">
                                 <div class="card-body">
                                     <h6 class="card-title"><i class="fas fa-shield-alt"></i> Test Coverage:</h6>
@@ -627,7 +627,7 @@
                     
                     <form id="chatForm" class="chat-input">
                         <textarea class="form-control" rows="2" name="message" placeholder="Ask me anything about software development..." style="resize: none;"></textarea>
-                        <button type="submit" class="btn btn-primary">
+                        <button type="submit" class="btn btn-primary py-3 px-4">
                             <i class="fas fa-paper-plane"></i> Send
                         </button>
                     </form>
